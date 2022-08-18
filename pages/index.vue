@@ -137,5 +137,5 @@ export default {
 </script>
 
 <style>
-@import url("https://s3.ap-northeast-2.amazonaws.com/static.unicornranch.co.kr/test/study/backofficepractice/css/styles.css");
+@import url("https://s3.ap-northeast-2.amazonaws.com/static.unicornranch.co.kr/test/study/backofficepractice/css/backoffice-styles.css");
 </style>
