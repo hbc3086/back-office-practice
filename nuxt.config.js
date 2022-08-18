@@ -24,7 +24,7 @@ module.exports = {
       //     href: "https://s3.ap-northeast-2.amazonaws.com/static.unicornranch.co.kr/allok/img/favicon.ico",
     ]
   },
-  css: ["~/static/scss/style.scss", "animate.css"],
+  css: [/*"~/static/scss/style.scss",*/ "animate.css"],
   /*
    ** Customize the progress bar color
    */

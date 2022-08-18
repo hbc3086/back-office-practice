@@ -135,3 +135,7 @@ export default {
   methods: {},
 };
 </script>
+
+<style>
+@import url("https://s3.ap-northeast-2.amazonaws.com/static.unicornranch.co.kr/test/study/backofficepractice/css/styles.css");
+</style>
