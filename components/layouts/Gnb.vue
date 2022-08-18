@@ -12,14 +12,10 @@
 <script>
 export default {
   data() {
-    return {
-    };
+    return {};
   },
-  components: {
-  },
-  mounted() {
-  },
-  methods: {
-  },
+  components: {},
+  mounted() {},
+  methods: {},
 };
 </script>

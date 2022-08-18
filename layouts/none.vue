@@ -20,14 +20,14 @@
 import Header from "~/components/layouts/Header";
 import Menu from "~/components/layouts/Menu.vue";
 import Setting from "~/mixins/Setting";
-import CreatePop from "~/components/popup/Create";
+import Alert from "~/components/popup/Alert";
 
 export default {
   mixins: [Setting],
   components: {
     Header,
     Menu,
-    CreatePop,
+    Alert,
   },
 };
 </script>

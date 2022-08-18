@@ -1,6 +1,22 @@
 <template>
   <div class="area_menu">
-    <h1 class="logo"><nuxt-link to="/">유니콘랜치</nuxt-link></h1>
+    <div>
+      <h1 class="logo"><nuxt-link to="/">유니콘랜치</nuxt-link></h1>
+      <transition
+        name="custom-classes-transition"
+        enter-active-class="animate__animated animate__fadeIn"
+        leave-active-class="animate__animated animate__fadeOut"
+      >
+        <button
+          class="btn_close"
+          @click="fnClosePop"
+          v-if="view == 'mobile'"
+          :key="$store.state.ui.view"
+        >
+          닫기
+        </button>
+      </transition>
+    </div>
     <nav>
       <ul class="list_menu">
         <li><nuxt-link to="/popup" class="menu no_dep">POPUP</nuxt-link></li>
@@ -73,6 +89,7 @@ export default {
       } else {
         target.classList.add("on");
       }
+      // document.querySelector(".btn_top").classList.add("show");
     },
     fnClosePop() {
       this.$store.dispatch("ui/setMenuState", false);
@@ -80,3 +97,11 @@ export default {
   },
 };
 </script>
+
+<style>
+.area_menu .btn_close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+</style>

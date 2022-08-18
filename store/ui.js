@@ -1,4 +1,6 @@
 const DEFAULT_STATE = {
+  device: "",
+  view: "",
   menuState: false,
   popCreateState:false,
   popAlertData: {
@@ -25,6 +27,12 @@ export default {
     },
   },
   actions: {
+    setDevice({ commit }, payload) {
+      commit('UPDATE_STATE', { device: payload });
+    },
+    setView({ commit }, payload) {
+      commit("UPDATE_STATE",  { view: payload });
+    },
     setMenuState({ commit }, payload) {
       commit('UPDATE_STATE', { menuState: payload });
     },
